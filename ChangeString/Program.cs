@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace ChangeString
 {
@@ -15,6 +16,7 @@ namespace ChangeString
                 char toAdd = c == input2 ? 'x' : c;
                 Console.Write(toAdd);
             }
+            
         }
     }
 }
