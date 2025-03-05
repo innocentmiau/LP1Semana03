@@ -10,13 +10,11 @@ namespace ChangeString
             string input = Console.ReadLine();
             Console.Write("Digite um caracter:");
             char input2 = char.Parse(Console.ReadLine());
-            string text = "";
-            for (int i = 0; i<input.Length; i++)
+            foreach (char c in input)
             {
-                char toAdd = input[i] == input2 ? 'x' : input[i];
-                text += toAdd;
+                char toAdd = c == input2 ? 'x' : c;
+                Console.Write(toAdd);
             }
-            Console.WriteLine(text);
         }
     }
 }
