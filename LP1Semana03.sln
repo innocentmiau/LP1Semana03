@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangeString", "ChangeStrin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArrayMul", "ArrayMul\ArrayMul.csproj", "{BD6F74B5-182E-4DCD-93CF-4003E4E811FE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeroPerk", "HeroPerk\HeroPerk.csproj", "{543608A8-9DE7-4675-967D-A1E0E333E374}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrapAnalyzer", "TrapAnalyzer\TrapAnalyzer.csproj", "{F55E5696-58CB-4E35-AAD1-943CAB6D4AB5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +34,13 @@ Global
 		{BD6F74B5-182E-4DCD-93CF-4003E4E811FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD6F74B5-182E-4DCD-93CF-4003E4E811FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD6F74B5-182E-4DCD-93CF-4003E4E811FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{543608A8-9DE7-4675-967D-A1E0E333E374}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{543608A8-9DE7-4675-967D-A1E0E333E374}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{543608A8-9DE7-4675-967D-A1E0E333E374}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{543608A8-9DE7-4675-967D-A1E0E333E374}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F55E5696-58CB-4E35-AAD1-943CAB6D4AB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F55E5696-58CB-4E35-AAD1-943CAB6D4AB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F55E5696-58CB-4E35-AAD1-943CAB6D4AB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F55E5696-58CB-4E35-AAD1-943CAB6D4AB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
