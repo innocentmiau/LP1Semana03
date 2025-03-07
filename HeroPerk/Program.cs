@@ -8,8 +8,8 @@ namespace HeroPerk
     {
         private static void Main(string[] args)
         {
-            string input = Console.ReadLine();
-            List<char> letters = new[] { 'w', 'a', 's', 'd' }.ToList();
+            string input = args[0];
+            List<char> letters = new[] { 'w', 's', 'a', 'd' }.ToList();
             int[] counting = new[] { 0, 0, 0, 0 };
             foreach (char c in input)
             {
@@ -23,15 +23,28 @@ namespace HeroPerk
             }
 
             bool[] perks = new[] {false, false, false, false};
+            List<Perks> perkList = Enum.GetValues(typeof(Perks)).Cast<Perks>().ToList();
+            string text = "";
             for (int i = 0; i < 4; i++)
             {
-                perks[i] = counting[i] % 2 == 0;
+                perks[i] = counting[i] % 2 != 0;
+                if (perks[i])
+                {
+                    text += perkList[i] + ", ";
+                }
             }
 
-            List<Perks> perkList = Enum.GetValues(typeof(Perks)).Cast<Perks>().ToList();
-            foreach (Perks perk in perkList)
+            text = text.Substring(0, text.Length - 2);
+
+            if (perks[0] == false && perks[1] == false && perks[2] == false && perks[3] == false)
             {
-                Console.WriteLine($"{perk.ToString()}: {perks[perkList.IndexOf(perk)]}");
+                Console.WriteLine("!No perks at all!");
+            }
+            else
+            {
+                Console.WriteLine(text);
+                if (perks[1] && perks[3]) Console.WriteLine("!Silent jumper!");
+                if (!perks[2]) Console.WriteLine("!Not gonna make it!");
             }
 
         }
